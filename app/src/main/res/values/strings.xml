@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">challenge1</string>
+    <string name="spinner_title">Escolha um animal</string>
+    <string name="botao_editar">Editar</string>
+    <string name="texto_dono">Nome do dono:</string>
+    <string name="texto_nome">Nome do animal:</string>
+    <string name="texto_idade">Idade:</string>
+    <string name="titulo">ANIMAIS</string>
+    <string-array name="animais">
+        <item>Sapo</item>
+        <item>Caracol</item>
+        <item>Rinoceronte</item>
+    </string-array>
+</resources>
