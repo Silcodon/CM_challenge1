@@ -69,7 +69,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent (view.getContext() , Activity2.class);
                 intent.putExtra("id", spin.getSelectedItemPosition());
-                startActivity(intent);
+                startActivityForResult(intent,REQ_CODE);
 
             }
         });
@@ -77,6 +77,10 @@ public class MainActivity extends AppCompatActivity {
 
     protected void onActivityResult(int requestCode, int resultCode, Intent intent){
         super.onActivityResult(requestCode,resultCode,intent);
+        ImageView image = findViewById(R.id.imageView);
+        TextView dono = findViewById(R.id.dono);
+        TextView nome = findViewById(R.id.nome);
+        TextView idade = findViewById(R.id.idade);
         if(resultCode==RESULT_OK){
             if (requestCode==REQ_CODE){
                 //Vem da segunda atividade
@@ -88,16 +92,29 @@ public class MainActivity extends AppCompatActivity {
                     dono_frog=dono_edit;
                     nome_frog=nome_edit;
                     idade_frog=String.valueOf(idade_edit);
+                    image.setImageResource(R.drawable.frog);
+                    dono.setText(dono_frog);
+                    nome.setText(nome_frog);
+                    idade.setText(idade_frog);
                 }
                 if(animal_position==1){
                     dono_snail=dono_edit;
                     nome_snail=nome_edit;
                     idade_snail=String.valueOf(idade_edit);
+                    image.setImageResource(R.drawable.snail);
+                    dono.setText(dono_snail);
+                    nome.setText(nome_snail);
+                    idade.setText(idade_snail);
                 }
                 if(animal_position==2){
                     dono_rhino=dono_edit;
                     nome_rhino=nome_edit;
                     idade_rhino=String.valueOf(idade_edit);
+                    image.setImageResource(R.drawable.rhino);
+                    dono.setText(dono_rhino);
+                    nome.setText(nome_rhino);
+                    idade.setText(idade_rhino);
+
                 }
             }
         }

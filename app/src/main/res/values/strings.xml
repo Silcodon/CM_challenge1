@@ -6,6 +6,11 @@
     <string name="texto_nome">Nome do animal:</string>
     <string name="texto_idade">Idade:</string>
     <string name="titulo">ANIMAIS</string>
+    <string name="titulo2">EDITAR</string>
+    <string name="hintdono">Insira o nome do dono</string>
+    <string name="hintnome">Insira o nome do animal</string>
+    <string name="hintidade">Insira a idade do animal</string>
+    <string name="botao_guardar">Guardar</string>
     <string-array name="animais">
         <item>Sapo</item>
         <item>Caracol</item>
